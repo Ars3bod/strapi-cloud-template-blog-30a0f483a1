@@ -13,5 +13,8 @@ module.exports = ({ env }) => ({
   // Strapi Cloud configuration
   cloud: {
     enabled: true,
+    apiToken: env('STRAPI_CLOUD_API_TOKEN'),
+    apiUrl: env('STRAPI_CLOUD_API_URL', 'https://api.strapi.cloud'),
+    firstRunWindow: env.int('STRAPI_CLOUD_FIRST_RUN_WINDOW', 30000),
   },
 });
