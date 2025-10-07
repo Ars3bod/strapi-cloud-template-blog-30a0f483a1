@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "policies",
+  "info": {
+    "singularName": "policy",
+    "pluralName": "policies",
+    "displayName": "Policy",
+    "description": "Manage policies and legal documents for SERA Mobile App"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titleAr": {
+      "type": "text",
+      "required": true
+    },
+    "titleEn": {
+      "type": "text",
+      "required": true
+    },
+    "descriptionAr": {
+      "type": "text"
+    },
+    "descriptionEn": {
+      "type": "text"
+    },
+    "contentAr": {
+      "type": "richtext",
+      "required": true
+    },
+    "contentEn": {
+      "type": "richtext",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["usage", "privacy", "dataProtection", "cookie"],
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "color": {
+      "type": "string",
+      "default": "#00623B"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "version": {
+      "type": "string",
+      "required": true
+    },
+    "effectiveDate": {
+      "type": "date",
+      "required": true
+    },
+    "lastUpdated": {
+      "type": "datetime"
+    }
+  }
+}

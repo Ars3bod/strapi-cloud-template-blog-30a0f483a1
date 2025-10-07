@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faqs",
+  "info": {
+    "singularName": "faq",
+    "pluralName": "faqs",
+    "displayName": "FAQ",
+    "description": "Manage frequently asked questions for SERA Mobile App"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "questionAr": {
+      "type": "text",
+      "required": true
+    },
+    "questionEn": {
+      "type": "text",
+      "required": true
+    },
+    "answerAr": {
+      "type": "richtext",
+      "required": true
+    },
+    "answerEn": {
+      "type": "richtext",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["general", "services", "billing", "technical"],
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "tags": {
+      "type": "json"
+    }
+  }
+}

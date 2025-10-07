@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "compensation_standards",
+  "info": {
+    "singularName": "compensation-standard",
+    "pluralName": "compensation-standards",
+    "displayName": "Compensation Standard",
+    "description": "Manage compensation standards for SERA Mobile App"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titleAr": {
+      "type": "text",
+      "required": true
+    },
+    "titleEn": {
+      "type": "text",
+      "required": true
+    },
+    "descriptionAr": {
+      "type": "richtext",
+      "required": true
+    },
+    "descriptionEn": {
+      "type": "richtext",
+      "required": true
+    },
+    "conditionsAr": {
+      "type": "text"
+    },
+    "conditionsEn": {
+      "type": "text"
+    },
+    "periodAr": {
+      "type": "text"
+    },
+    "periodEn": {
+      "type": "text"
+    },
+    "compensationAr": {
+      "type": "text"
+    },
+    "compensationEn": {
+      "type": "text"
+    },
+    "additionalCompensationAr": {
+      "type": "text"
+    },
+    "additionalCompensationEn": {
+      "type": "text"
+    },
+    "notesAr": {
+      "type": "text"
+    },
+    "notesEn": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "color": {
+      "type": "string",
+      "default": "#00623B"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["service", "restoration", "notification", "emergency", "violation", "complaint"],
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

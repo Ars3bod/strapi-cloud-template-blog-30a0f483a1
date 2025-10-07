@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "important_links",
+  "info": {
+    "singularName": "important-link",
+    "pluralName": "important-links",
+    "displayName": "Important Link",
+    "description": "Manage important links for SERA Mobile App"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "labelAr": {
+      "type": "text",
+      "required": true
+    },
+    "labelEn": {
+      "type": "text",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["government", "services", "resources"],
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "color": {
+      "type": "string",
+      "default": "#00623B"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "descriptionAr": {
+      "type": "text"
+    },
+    "descriptionEn": {
+      "type": "text"
+    }
+  }
+}

@@ -1,13 +1,12 @@
 {
-  "name": "my-app-name",
+  "name": "sera-mobile-cms",
   "version": "0.1.0",
   "private": true,
-  "description": "A Strapi application",
+  "description": "SERA Mobile App CMS - Strapi backend for mobile content management",
   "scripts": {
     "build": "strapi build",
     "deploy": "strapi deploy",
     "develop": "strapi develop",
-    "seed:example": "node ./scripts/seed.js",
     "start": "strapi start",
     "strapi": "strapi"
   },
