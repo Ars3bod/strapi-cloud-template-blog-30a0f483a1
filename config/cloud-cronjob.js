@@ -1,0 +1,5 @@
+module.exports = ({ env }) => ({
+  apiToken: env('STRAPI_CLOUD_API_TOKEN') || '8539b7daa451a74e9ba7e39e951b819c4bad5d6438cb155e856c943a5a4ce2c622c93e81edb0f060810e87de00453c86cb826fa80316fe2bbd945482856dca9241cd473ad8bdf2a6706901880e2b5f794bd1b057dd469b4770c39fd5c589338d3054c1ea204270436e52d493dc9d049311364a3339d3cbf1627b04495113f5b3',
+  apiUrl: env('STRAPI_CLOUD_API_URL') || 'https://api.strapi.cloud',
+  firstRunWindow: env.int('STRAPI_CLOUD_FIRST_RUN_WINDOW') || 30000,
+});
